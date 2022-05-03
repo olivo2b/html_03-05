@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: aqua;
+  height: 700px;
+
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  align-content: center;
+}
+
+.item {
+  background-color: blue;
+  width: 200px;
+}
+
+.one {
+  min-height: 100px;
+  align-self: center;
+}
+
+.two {
+  min-height: 200px;
+  flex-grow: 1;
+  order: 3;
+}
+
+.three {
+  min-height: 300px;
+}
