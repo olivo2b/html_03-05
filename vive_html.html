@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>elements</title>
+    <style>
+      .titre {
+        background-color: aqua;
+        transition: 1s ease-out 100ms;
+      }
+      .titre:hover {
+        background-color: brown;
+        font-style: italic;
+        padding: 25px;
+      }
+      .lien {
+        transition: 0.3s ease-out 100ms;
+      }
+      .lien:hover {
+        color: aqua;
+        background-color: bisque;
+        text-decoration: underline;
+      }
+      input:focus,
+      button:focus {
+        background-color: brown;
+        color: blue;
+        padding: 10px;
+      }
+      input:required {
+        background-color: blueviolet;
+      }
+      input :checked {
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header description">
+      <h1 class="titre">pseudo-elements</h1>
+      <p class="description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+        iusto quis voluptas magni asperiores, eveniet provident rerum nobis ipsa
+        nam corporis laboriosam consectetur cum consequatur quidem, suscipit
+        perspiciatis dolor iure!
+      </p>
+      <span>
+        <p>Lorem, ipsum.</p>
+        <ul style="display: flex gap 30px">
+          <li class="lien">toto</li>
+          <li>tata</li>
+          <li>toto</li>
+        </ul>
+        <input required type="text" />
+      </span>
+      <button>coucou</button>
+      <input type="checkbox" name="hello" id="ola" />
+    </div>
+  </body>
+</html>
